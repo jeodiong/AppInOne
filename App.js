@@ -23,10 +23,9 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <AdMobBanner
-          adSize="mediumRectangle"
-          adUnitID="ca-app-pub-6546234661958235/7558584498"
+          adSize="banner"
+          adUnitID="ca-app-pub-6546234661958235/2163142802"
           testDevices={[AdMobBanner.simulatorId]}
-        // onAdFailedToLoad={error => console.error(error)}
         />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
