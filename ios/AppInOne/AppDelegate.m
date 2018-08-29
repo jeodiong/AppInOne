@@ -9,6 +9,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+@import GoogleMobileAds;
 
 @implementation AppDelegate
 
@@ -29,6 +30,9 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  [GADMobileAds configureWithApplicationID:@"ca-app-pub-6546234661958235~1703622586"];
+  
   return YES;
 }
 

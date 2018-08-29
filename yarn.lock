@@ -4548,7 +4548,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2:
   version "15.6.2"
   resolved "http://registry.npm.taobao.org/prop-types/download/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -4614,6 +4614,12 @@ react-devtools-core@^3.2.2:
 react-is@^16.4.1:
   version "16.4.2"
   resolved "http://registry.npm.taobao.org/react-is/download/react-is-16.4.2.tgz#84891b56c2b6d9efdee577cc83501dfc5ecead88"
+
+react-native-admob@^2.0.0-beta.5:
+  version "2.0.0-beta.5"
+  resolved "http://registry.npm.taobao.org/react-native-admob/download/react-native-admob-2.0.0-beta.5.tgz#f83fd6144c5dd3e708e937793f41c0c50db86682"
+  dependencies:
+    prop-types "^15.5.10"
 
 react-native@0.56.0:
   version "0.56.0"

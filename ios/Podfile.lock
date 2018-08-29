@@ -6,6 +6,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.4)
+  - Google-Mobile-Ads-SDK (7.32.0)
   - React/Core (0.56.0):
     - yoga (= 0.56.0.React)
   - React/CxxBridge (0.56.0):
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - Google-Mobile-Ads-SDK
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -56,6 +58,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - Google-Mobile-Ads-SDK
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -74,9 +77,10 @@ SPEC CHECKSUMS:
   DoubleConversion: a9706f16e388b53ff12cca34473428ee29746a26
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: b3b0330915eccea41c5cc9731a77cf564a9be5ea
+  Google-Mobile-Ads-SDK: 2aca87e46e860f1e1fc0fdc1201dd9caa4be9ba6
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 1dc435ef47689cab26073906abe61528b32afaca
+PODFILE CHECKSUM: e35a7b903d16f8b7769b5b666d0e6ac88abcecaa
 
 COCOAPODS: 1.5.3
