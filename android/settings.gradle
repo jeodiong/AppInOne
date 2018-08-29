@@ -1,0 +1,3 @@
+rootProject.name = 'AppInOne'
+
+include ':app'
