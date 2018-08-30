@@ -25,8 +25,7 @@ export default class App extends Component<Props> {
         <Text>{AdMobBanner.simulatorId}</Text>
         <AdMobBanner
           adSize="banner"
-          // adUnitID="ca-app-pub-6546234661958235/7558584498"
-          adUnitID='ca-app-pub-3940256099942544/2934735716'
+          adUnitID="ca-app-pub-6546234661958235/7558584498"
           testDevices={[AdMobBanner.simulatorId]}
         // onAdFailedToLoad={error => console.error(error)}
         />
