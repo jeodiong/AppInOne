@@ -7,6 +7,8 @@ PODS:
     - glog
   - glog (0.3.4)
   - Google-Mobile-Ads-SDK (7.32.0)
+  - React (0.56.0):
+    - React/Core (= 0.56.0)
   - React/Core (0.56.0):
     - yoga (= 0.56.0.React)
   - React/CxxBridge (0.56.0):
@@ -39,6 +41,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNVectorIcons (5.0.0):
+    - React
   - yoga (0.56.0.React)
 
 DEPENDENCIES:
@@ -53,6 +57,7 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -69,6 +74,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -79,8 +86,9 @@ SPEC CHECKSUMS:
   glog: b3b0330915eccea41c5cc9731a77cf564a9be5ea
   Google-Mobile-Ads-SDK: 2aca87e46e860f1e1fc0fdc1201dd9caa4be9ba6
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: e35a7b903d16f8b7769b5b666d0e6ac88abcecaa
+PODFILE CHECKSUM: 7202d233a5bb08543dff9db9df6f17e606be4cd2
 
 COCOAPODS: 1.5.3

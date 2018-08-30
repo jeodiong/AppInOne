@@ -9,6 +9,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { AdMobBanner, AdMobInterstitial, PublisherBanner, AdMobRewarded, } from 'react-native-admob'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,6 +24,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text>{AdMobBanner.simulatorId}</Text>
+        <Icon name="rocket" size={30} color="#900" />
         <AdMobBanner
           adSize="banner"
           adUnitID="ca-app-pub-6546234661958235/7558584498"
