@@ -38,3 +38,16 @@ ext {
     targetSdkVersion = 26
     supportLibVersion = "26.1.0"
 }
+
+
+// That forces all the submodules to use the specified compileSdkVersion and buildToolsVersion.
+subprojects {
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 26
+                buildToolsVersion '26.0.3'
+            }
+        }
+    }
+}
