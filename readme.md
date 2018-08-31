@@ -1,0 +1,1 @@
+# add admob /ios/Pods

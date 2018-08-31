@@ -1,63 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  Platform, StyleSheet, Text, View,
-} from 'react-native';
-import {
-  AdMobBanner,
-} from 'react-native-admob';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n',
-  android:
-    'Double tap R on your keyboard to reload,\n'
-    + 'Shake or press menu button for dev menu',
-});
+import AppStack from './App-stack';
+import AppTabs from './App-tabs';
+import Config from './config';
+
+// 是否是tab页面
+const { isTabApp } = Config;
+export const IndexScreen = isTabApp ? AppTabs : AppStack;
 
 type Props = {};
-export default class App extends Component<Props> {
+class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>{AdMobBanner.simulatorId}</Text>
-        <Icon name="rocket" size={30} color="#900" />
-        <AdMobBanner
-          adSize="banner"
-          adUnitID="ca-app-pub-6546234661958235/7558584498"
-          testDevices={[AdMobBanner.simulatorId]}
-        // onAdFailedToLoad={error => console.error(error)}
-        />
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <IndexScreen />
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+export default App;

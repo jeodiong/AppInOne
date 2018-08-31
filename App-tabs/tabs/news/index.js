@@ -11,7 +11,7 @@ const instructions = Platform.select({
 });
 
 type Props = {};
-export default class MeIndexStack extends Component<Props> {
+export default class NewsIndexStack extends Component<Props> {
   render() {
     const { navigation } = this.props;
     return (
@@ -23,7 +23,7 @@ export default class MeIndexStack extends Component<Props> {
         />
         <Button
           title="Go to detail"
-          onPress={() => navigation.navigate('MeDetailStack')}
+          onPress={() => navigation.navigate('NewsDetailStack')}
         />
       </SafeAreaView>
     );

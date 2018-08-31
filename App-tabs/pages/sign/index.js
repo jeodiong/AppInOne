@@ -5,11 +5,19 @@ import {
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n',
-  android: 'Double tap R on your keyboard to reload',
+  android:
+    'Double tap R on your keyboard to reload,\n'
+    + 'Shake or press menu button for dev menu',
 });
 
 type Props = {};
-export default class AppStackIndexDetail extends Component<Props> {
+export default class AppStackIndex extends Component<Props> {
+  // static navigationOptions = {
+  //   headerMode: 'none',
+  //   gesturesEnabled: false,
+  //   headerTitle: '登录',
+  // };
+
   render() {
     return (
       <View style={styles.container}>
