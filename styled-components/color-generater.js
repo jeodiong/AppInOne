@@ -15,7 +15,8 @@ colorsArr.map((item, index) => {
 // 中性色
 // 浅色背景
 const dark = {
-  title: lighten(0.15, 'black'),
+  // title: lighten(0.15, 'black'),
+  title: 'black',
   primaryText: lighten(0.35, 'black'),
   secondaryText: lighten(0.55, 'black'),
   disabled: lighten(0.75, 'black'),

@@ -3,7 +3,7 @@
  * @Author: DongDong
  * @Date: 2018-07-20 13:14:18
  * @Last Modified by: DongDong
- * @Last Modified time: 2018-08-31 17:37:32
+ * @Last Modified time: 2018-08-31 18:04:48
  */
 
 import {
@@ -11,7 +11,7 @@ import {
 } from './color-generater';
 
 const fs = {
-  mini: 12, s: 14, m: 16, l: 20, xl: 24, xxl: 30, max: 50,
+  mini: 12, s: 14, m: 16, l: 18, xl: 20, xxl: 28, max: 34,
 };
 const lh = {
   mini: 20, s: 22, m: 24, l: 28, xl: 32, xxl: 38,

@@ -3,7 +3,7 @@
  * @Author: DongDong
  * @Date: 2018-07-20 13:15:53
  * @Last Modified by: DongDong
- * @Last Modified time: 2018-08-31 17:38:59
+ * @Last Modified time: 2018-08-31 18:04:47
  */
 
 // Examples
@@ -23,15 +23,19 @@ export const Text = styled.Text`
   font-weight: ${props => (props.bold ? constants.fw.l : constants.fw.m)};
 `;
 
+// title1
 export const H1 = Text.extend`
   font-size: ${constants.fs.xxl};
 `;
+// title2
 export const H2 = Text.extend`
   font-size: ${constants.fs.xl};
 `;
+// title3
 export const H3 = Text.extend`
   font-size: ${constants.fs.l};
 `;
+// headline
 export const H4 = Text.extend`
   font-size: ${constants.fs.m};
 `;
