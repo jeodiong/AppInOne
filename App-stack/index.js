@@ -13,8 +13,8 @@ const Index = createStackNavigator({
     navigationOptions: { headerTitle: 'stab2' },
   },
 }, {
-  mode: 'modal',
-  headerMode: 'none',
+  // mode: 'modal',
+  // headerMode: 'none',
 });
 
 export default Index;
