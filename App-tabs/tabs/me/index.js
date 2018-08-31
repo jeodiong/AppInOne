@@ -19,7 +19,7 @@ export default class MeIndexStack extends Component<Props> {
         <Text>{instructions}</Text>
         <Button
           title="Go to Sign"
-          onPress={() => navigation.navigate('SignStack')}
+          onPress={() => navigation.navigate('SignIndexStack')}
         />
         <Button
           title="Go to detail"

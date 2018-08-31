@@ -6,7 +6,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import NewsIndexScreen from './tabs/news';
 import MeIndexScreen from './tabs/me';
 // stack
-import SignScreen from './pages/sign';
+import SignIndexScreen from './pages/sign';
 import NewsDetailScreen from './pages/newsDetail';
 import MeDetailScreen from './pages/meDetail';
 
@@ -72,12 +72,14 @@ const AppFinal = createStackNavigator({
   Tabs: {
     screen: Tabs,
   },
-  SignStack: {
-    screen: SignScreen,
+  SignIndexStack: {
+    screen: SignIndexScreen,
   },
 }, {
   mode: 'modal',
   headerMode: 'none',
-  gesturesEnabled: false,
+  navigationOptions: {
+    gesturesEnabled: false,
+  },
 });
 export default AppFinal;
