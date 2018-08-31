@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
-  Platform, StyleSheet, Text, Button, SafeAreaView,
+  Platform, StyleSheet, Text, Button,
 } from 'react-native';
 import { connect } from 'react-redux';
-
 import { INCREASE_FUNC, DECREASE_FUNC } from '../../../redux/actions/counter';
+import Styled from '../../../styled-components';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n',
@@ -19,8 +19,9 @@ class NewsIndexStack extends Component<Props> {
     const { navigation } = this.props;
     const { counter, dispatchIncreaseFunc, dispatchDecreaseFunc } = this.props;
     return (
-      <SafeAreaView style={styles.container}>
-        <Text>{instructions}</Text>
+      <Styled.SafeArea style={styles.temp}>
+        <Styled.H1 style={styles.H1} bold>Header</Styled.H1>
+        <Styled.H3 style={styles.H3}>{instructions}</Styled.H3>
         <Button
           title="Go to Sign"
           onPress={() => navigation.navigate('SignIndexStack')}
@@ -44,7 +45,7 @@ class NewsIndexStack extends Component<Props> {
             dispatchDecreaseFunc();
           }}
         />
-      </SafeAreaView>
+      </Styled.SafeArea>
     );
   }
 }
