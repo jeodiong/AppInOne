@@ -13,6 +13,12 @@ const { Banner } = firebase.admob;
 
 type Props = {};
 class NewsIndexStack extends Component<Props> {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+
   componentDidMount() {
   }
 
@@ -20,6 +26,9 @@ class NewsIndexStack extends Component<Props> {
     return (
       <Styled.SafeArea style={styles.temp} bg="white">
         <Banner unitId={config.admobIds.news1} />
+        <Styled.Pbody style={styles.Pbody}>
+          text
+        </Styled.Pbody>
       </Styled.SafeArea>
     );
   }

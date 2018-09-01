@@ -30,5 +30,6 @@ target 'AppInOne' do
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
+  pod 'Firebase/Auth'
 
 end
