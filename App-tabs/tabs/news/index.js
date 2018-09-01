@@ -4,6 +4,9 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 import firebase from 'react-native-firebase';
+import {
+  AdMobBanner,
+} from 'react-native-admob';
 
 import { INCREASE_FUNC, DECREASE_FUNC } from '../../../redux/actions/counter';
 import Styled from '../../../styled-components';
@@ -29,6 +32,12 @@ class NewsIndexStack extends Component<Props> {
         <Styled.Pbody style={styles.Pbody}>
           text
         </Styled.Pbody>
+        <AdMobBanner
+          adSize="banner"
+          adUnitID="ca-app-pub-6546234661958235/7558584498"
+          testDevices={[AdMobBanner.simulatorId]}
+        // onAdFailedToLoad={error => console.error(error)}
+        />
       </Styled.SafeArea>
     );
   }
