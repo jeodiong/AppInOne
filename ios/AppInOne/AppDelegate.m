@@ -6,10 +6,10 @@
  */
 
 #import "AppDelegate.h"
-
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 @import GoogleMobileAds;
+@import Firebase;
 
 @implementation AppDelegate
 
@@ -32,7 +32,7 @@
   [self.window makeKeyAndVisible];
   
   [GADMobileAds configureWithApplicationID:@"ca-app-pub-6546234661958235~1703622586"];
-  
+  [FIRApp configure];
   return YES;
 }
 

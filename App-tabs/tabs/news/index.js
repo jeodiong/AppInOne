@@ -3,17 +3,22 @@ import {
   StyleSheet,
 } from 'react-native';
 import { connect } from 'react-redux';
+import firebase from 'react-native-firebase';
+
 import { INCREASE_FUNC, DECREASE_FUNC } from '../../../redux/actions/counter';
 import Styled from '../../../styled-components';
 
+const { Banner } = firebase.admob;
+
 type Props = {};
 class NewsIndexStack extends Component<Props> {
+  componentDidMount() {
+  }
+
   render() {
     return (
       <Styled.SafeArea style={styles.temp} bg="white">
-        <Styled.Pbody style={styles.Pbody}>
-          news
-        </Styled.Pbody>
+        <Banner unitId="ca-app-pub-6546234661958235/2163142802" />
       </Styled.SafeArea>
     );
   }
