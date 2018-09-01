@@ -1,31 +1,18 @@
 import React, { Component } from 'react';
 import {
-  Platform, StyleSheet, Text, Button, SafeAreaView,
+  StyleSheet,
 } from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n',
-  android:
-    'Double tap R on your keyboard to reload,\n'
-    + 'Shake or press menu button for dev menu',
-});
+import Styled from '../../../styled-components';
 
 type Props = {};
 export default class MeIndexStack extends Component<Props> {
   render() {
-    const { navigation } = this.props;
     return (
-      <SafeAreaView style={styles.container}>
-        <Text>{instructions}</Text>
-        <Button
-          title="Go to Sign"
-          onPress={() => navigation.navigate('SignIndexStack')}
-        />
-        <Button
-          title="Go to detail"
-          onPress={() => navigation.navigate('MeDetailStack')}
-        />
-      </SafeAreaView>
+      <Styled.SafeArea style={styles.temp} bg="white">
+        <Styled.Pbody style={styles.Pbody}>
+          me
+        </Styled.Pbody>
+      </Styled.SafeArea>
     );
   }
 }

@@ -3,7 +3,7 @@
  * @Author: DongDong
  * @Date: 2018-07-20 13:17:25
  * @Last Modified by: DongDong
- * @Last Modified time: 2018-08-31 17:39:11
+ * @Last Modified time: 2018-09-01 16:56:10
  */
 
 // Examples
@@ -13,6 +13,7 @@ import { SafeAreaView } from 'react-navigation';
 
 export const SafeArea = styled(SafeAreaView)`
   background-color: ${props => props.bg || 'transparent'};
+  flex: 1;
 `;
 export const ScrollView = styled.ScrollView`
   background-color: ${props => props.bg || 'transparent'};
