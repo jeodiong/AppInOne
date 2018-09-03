@@ -46,7 +46,8 @@
     "preset": "react-native",
     "setupFiles": [
       "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
-      "<rootDir>/node_modules/appcenter/test/AppCenterMock.js"
+      "<rootDir>/node_modules/appcenter/test/AppCenterMock.js",
+      "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
     ]
   },
   "husky": {

@@ -1,4 +1,11 @@
 PODS:
+  - AppCenter/Analytics (1.9.0):
+    - AppCenter/Core
+  - AppCenter/Core (1.9.0)
+  - AppCenter/Crashes (1.9.0):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (1.8.0):
+    - AppCenter/Core (= 1.9.0)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.5)
   - Firebase/AdMob (5.7.0):
@@ -105,6 +112,9 @@ PODS:
   - yoga (0.56.0.React)
 
 DEPENDENCIES:
+  - AppCenter/Analytics (~> 1.9.0)
+  - AppCenter/Crashes (~> 1.9.0)
+  - AppCenterReactNativeShared (~> 1.8.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Firebase/AdMob
   - Firebase/Auth
@@ -124,6 +134,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AppCenter
+    - AppCenterReactNativeShared
     - boost-for-react-native
     - Firebase
     - FirebaseAnalytics
@@ -152,6 +164,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppCenter: 3cf7b9387549e9703dab068793e404013e8c0cc1
+  AppCenterReactNativeShared: 53eb73a85b3adaf0d5b6dd8ea276a56e2d9aed6c
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: a9706f16e388b53ff12cca34473428ee29746a26
   Firebase: 734a4f92957aa6c40e7ae3fda3d9359e1890aa87
@@ -171,6 +185,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: c319080414e10f56c7787253e6a2fc17cf05775b
+PODFILE CHECKSUM: 8392d358b2b0fe743c7c1680188b77ab3c4b7dce
 
 COCOAPODS: 1.5.3
