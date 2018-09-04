@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
+install! 'cocoapods', :deterministic_uuids => false
 
 target 'AppInOne' do
   pod 'AppCenter/Crashes', '~> 1.9.0'
@@ -35,4 +36,14 @@ target 'AppInOne' do
   pod 'Firebase/AdMob'
   pod 'Firebase/Auth'
 
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+  end
 end
