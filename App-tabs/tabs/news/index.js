@@ -30,7 +30,7 @@ class NewsIndexStack extends Component<Props> {
       <Styled.SafeArea style={styles.temp} bg="white">
         <Banner unitId={config.admobIds.news1} />
         <Styled.Pbody style={styles.Pbody}>
-          text
+          text production
         </Styled.Pbody>
         <AdMobBanner
           adSize="banner"
