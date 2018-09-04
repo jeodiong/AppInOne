@@ -11,6 +11,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
+import codePush from 'react-native-code-push';
 
 import App from './App';
 import { name as appName } from './app.json';
@@ -21,11 +22,15 @@ const store = createStore(
   reducers,
   applyMiddleware(thunkMiddleware, loggerMiddleware),
 );
-const FinalApp = () => (
+let FinalApp = () => (
   <Provider store={store}>
     <App />
   </Provider>
 );
+
+// codepush setting
+const codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+FinalApp = codePush(codePushOptions)(FinalApp);
 
 AppRegistry.registerComponent(appName, () => FinalApp);
 
