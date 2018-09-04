@@ -12,6 +12,8 @@ import { INCREASE_FUNC, DECREASE_FUNC } from '../../../redux/actions/counter';
 import Styled from '../../../styled-components';
 import config from '../../../config';
 
+import $api from '../../../api/index';
+
 const { Banner } = firebase.admob;
 
 type Props = {};
@@ -23,6 +25,11 @@ class NewsIndexStack extends Component<Props> {
   }
 
   componentDidMount() {
+    $api.sign.baidu().then((res) => {
+      console.log(res);
+    }).catch((err) => {
+      console.error(err);
+    });
   }
 
   render() {

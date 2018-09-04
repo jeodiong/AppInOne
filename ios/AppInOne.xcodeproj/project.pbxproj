@@ -1615,7 +1615,7 @@
 			baseConfigurationReference = 20BA6933260C27EEE2C86A79 /* Pods-AppInOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODEPUSH_KEY = "";
+				CODEPUSH_KEY = "Z5LUdH_5r8uo8-xnuByBPMQjWVjXBJ-VfIKmwQ";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 8TFPGX29CB;
